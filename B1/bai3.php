@@ -110,11 +110,10 @@
         <div class="additional-results">
             <?php
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    // Check even/odd
+                  
                     echo "<p>Số thứ nhất là: " . ($num1 % 2 === 0 ? "Chẵn" : "Lẻ") . "</p>";
                     echo "<p>Số thứ hai là: " . ($num2 % 2 === 0 ? "Chẵn" : "Lẻ") . "</p>";
 
-                    // Check prime
                     echo "<p>Số thứ nhất " . (isPrime($num1) ? "là số nguyên tố" : "không phải là số nguyên tố") . "</p>";
                     echo "<p>Số thứ hai " . (isPrime($num2) ? "là số nguyên tố" : "không phải là số nguyên tố") . "</p>";
                 }
